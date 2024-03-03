@@ -146,7 +146,7 @@ export default function ProductForm() {
                     </div>
                 </div>
                 {/* submit button */}
-                <button disabled={loading.form} type="submit" id="lws-inputSubmit" className="submit">
+                <button disabled={loading.form} type="submit" id="lws-inputSubmit" className="submit bg-gray-900">
                     {loading.form ? 'Loading...' : 'Add Product'}
                 </button>
             </form>
