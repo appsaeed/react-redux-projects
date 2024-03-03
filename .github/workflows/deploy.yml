@@ -1,9 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages extended version
 
 on:
   push:
     branches:
-      - shop-v
+      - shop-v1
 
 jobs:
   build-and-deploy:
