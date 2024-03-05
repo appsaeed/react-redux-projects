@@ -14,7 +14,7 @@ const basename = import.meta.env.VITE_BASENAME || '/';
 ReactDOM.createRoot(document.getElementById(main_dom)!).render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename={import.meta.env.PROD && basename}>
+      <BrowserRouter basename={basename}>
         <Router />
       </BrowserRouter>
     </Provider>
