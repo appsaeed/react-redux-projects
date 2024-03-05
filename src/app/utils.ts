@@ -15,3 +15,18 @@ export function formatPrice(price: number, locales?: string | string[] | undefin
         })
     ).format(price);
 }
+
+
+
+//make item pritty look like todo, tood no 
+export const grammarlyItem = (count: number, items: [string, string, string | undefined]) => {
+
+    switch (count) {
+        case 0:
+            return items[2] ? items[2] : 'Empty';
+        case 1:
+            return count + ' ' + items[0]
+        default:
+            return count + ' ' + items[1]
+    }
+}

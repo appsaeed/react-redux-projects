@@ -6,6 +6,7 @@ export default function Homepage() {
             <ul className="">
                 <li><Link className="text-blue-600 hover:underline" to={'/'}>Home</Link></li>
                 <li><Link className="text-blue-600 hover:underline" to={'/shop'}>Shop</Link></li>
+                <li><Link className="text-blue-600 hover:underline" to={'/todos'}>Todos</Link></li>
             </ul>
         </div>
     </>

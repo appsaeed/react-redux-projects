@@ -1,11 +1,12 @@
-import settings from "../../app/settings"
 import useHead from "../../hooks/useHead"
 import Billing from "./components/Billing"
 import CartItems from "./components/CartList"
 
 export default function Cart() {
     useHead({
-        title: ['Cart', 'Shop', settings.name].join(' | '),
+        title: 'Cart - Shop',
+        description: 'cart description',
+        keywords: 'cart keywords',
     })
     return (
         <>

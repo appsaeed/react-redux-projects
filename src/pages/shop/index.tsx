@@ -1,4 +1,3 @@
-import settings from "../../app/settings";
 import useHead from "../../hooks/useHead";
 import './assets/style.css';
 import ProductForm from "./components/ProductForm";
@@ -6,7 +5,9 @@ import Products from "./components/Products";
 
 export default function Shop() {
     useHead({
-        title: 'Shop - ' + settings.name
+        title: 'Shop',
+        description: 'My shop description',
+        keywords: 'shop description, appsaeed'
     });
     return (
         <>

@@ -4,6 +4,7 @@ import Nopage from './pages/Nopage'
 import Shop from './pages/shop'
 import Cart from './pages/shop/Cart'
 import Navbar from './pages/shop/components/Navbar'
+import TodosPages from './pages/todos/Index'
 
 export default function Router() {
     return (
@@ -14,6 +15,7 @@ export default function Router() {
                 <Route index element={<Shop />} />
                 <Route path='cart' element={<Cart />} />
             </Route>
+            <Route path="todos" element={<TodosPages />} />
 
             {/* not found page */}
             <Route path="/*" element={<Nopage />} />
